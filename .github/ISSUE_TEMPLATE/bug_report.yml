@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in the editor does not work, or it damaged a file
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please check the [open issues](https://github.com/OleksandrKhrashchevskyi/Jagged-Alliance-2-Game-Editor/issues) first — maybe it is already reported.
+        **Tip:** in the editor open **⚙ → Report a problem…** — it makes one `.zip` with the version, the log and (if you tick them) the open save, map and `Ja2_Options.INI`. Attach it below.
+        If the editor damaged a save or a data file, restore it from your own backup, the `.bak` copy or *Save list → Save history*.
+  - type: input
+    id: editor-version
+    attributes:
+      label: Editor version
+      description: Shown in ⚙ → Check for updates, or the release you downloaded.
+      placeholder: "e.g. 1.0 from 2026-09-25"
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version and mods
+      description: Vanilla JA2, 1.13 (build from JA2_113-Version.txt), other mods.
+      placeholder: "e.g. 1.13 build 9352, no other mods"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - Start page / settings
+        - Savegame editor
+        - Game data editor
+        - Map editor
+        - Updates / install
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: Step by step, so the bug can be repeated.
+      placeholder: |
+        1. Opened save …
+        2. Clicked …
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: checkboxes
+    id: damage
+    attributes:
+      label: Damage
+      options:
+        - label: The editor damaged a save or a game file
+  - type: textarea
+    id: files
+    attributes:
+      label: Screenshots and files
+      description: Drag in a screenshot and, if the problem is with one, the save or data file (zip it if it is large).

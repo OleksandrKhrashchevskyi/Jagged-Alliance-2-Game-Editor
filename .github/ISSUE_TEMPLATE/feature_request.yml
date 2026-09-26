@@ -1,0 +1,22 @@
+name: Idea / feature request
+description: Suggest something new for the editor
+title: "Idea: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What do you want to do in the game?
+      description: Describe the goal, not only the button — e.g. "give all militia in Drassen better guns".
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could the editor help?
+      description: Where it could go, what it could look like. Mock-ups and screenshots help.
+  - type: textarea
+    id: files
+    attributes:
+      label: Files involved
+      description: XML / INI / save / map files this touches, if you know them.
