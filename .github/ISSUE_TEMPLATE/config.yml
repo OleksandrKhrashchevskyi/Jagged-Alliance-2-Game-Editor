@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security problem or fake copy of the editor
+    url: https://github.com/OleksandrKhrashchevskyi/Jagged-Alliance-2-Game-Editor/security/policy
+    about: Please report these privately — see the security policy.
+  - name: Download the latest release
+    url: https://github.com/OleksandrKhrashchevskyi/Jagged-Alliance-2-Game-Editor/releases/latest
+    about: Update to the newest version before reporting a bug.
